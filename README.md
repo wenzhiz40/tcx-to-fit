@@ -5,7 +5,7 @@
 ## 安装
 
 ```powershell
-python -m pip install -r outputs/requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 需要 Python 3.8 或更新版本。
@@ -13,7 +13,7 @@ python -m pip install -r outputs/requirements.txt
 ## 转换单个文件
 
 ```powershell
-python outputs/tcx_to_fit.py "C:\\path\\to\\activity.tcx"
+python tcx_to_fit.py "C:\path\to\activity.tcx"
 ```
 
 默认在 TCX 文件旁生成同名 `.fit` 文件。转换后会自动通过 FIT 文件头、CRC 和消息解码校验。
@@ -21,7 +21,7 @@ python outputs/tcx_to_fit.py "C:\\path\\to\\activity.tcx"
 ## 批量转换
 
 ```powershell
-python outputs/tcx_to_fit.py "C:\\Huawei\\TCX" --output "C:\\Huawei\\FIT"
+python tcx_to_fit.py "C:\Huawei\TCX" --output "C:\Huawei\FIT"
 ```
 
 ## 数据处理
